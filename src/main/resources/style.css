@@ -1,0 +1,33 @@
+.root {
+	-fx-font: 15 sans-serif;
+}
+
+.hbox {
+	-fx-spacing: 5;
+	-fx-alignment: center;
+}
+
+.grid-pane {
+	-fx-padding: 25 5 25 5;
+}
+
+.jfx-decorator-buttons-container {
+	-fx-spacing: 10;
+}
+
+.jfx-text-field {
+	-fx-pref-column-count: 12;
+	-jfx-focus-color: #2196f3;
+	-jfx-unfocus-color: #2196f3;
+	-jfx-label-float: true;
+}
+
+.jfx-button {
+	-jfx-button-type: RAISED;
+	-fx-background-color: #2196f3;
+	-fx-text-fill: white;
+}
+
+.error-label {
+	-fx-font-size: 13;
+}

@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+	id 'com.github.johnrengelman.shadow' version '5.2.0'
+}
+
+repositories {
+    jcenter()
+	maven {
+		url "https://oss.sonatype.org/content/repositories/snapshots"
+	}
+}
+
+dependencies {
+	implementation 'org.processing:core:3.3.7'
+	implementation 'com.jfoenix:jfoenix:8.0.8'
+	implementation 'com.badlogicgames.packr:packr:2.2-SNAPSHOT'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.5.1'
+}
+
+application {
+    mainClassName = 'conway.Main'
+}
+
+tasks.withType(JavaCompile) {
+	sourceCompatibility = "8"
+	targetCompatibility = "8"
+}
+
+test {
+    useJUnitPlatform()
+}
